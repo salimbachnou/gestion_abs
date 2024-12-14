@@ -12,7 +12,10 @@ class User extends Authenticatable
     protected $table = 'user';
     protected $primaryKey = 'id_user';
 
+    // Colonnes pouvant être remplies via des formulaires ou des méthodes create/update
     protected $fillable = [
+        'nom', // Ajouté
+        'prenom', // Ajouté
         'email',
         'password',
         'role',
@@ -21,10 +24,12 @@ class User extends Authenticatable
         'id_groupe'
     ];
 
+    // Colonnes cachées (par exemple, pour ne pas apparaître dans les JSON)
     protected $hidden = [
         'password'
     ];
 
+    // Relations
     public function groupe()
     {
         return $this->belongsTo(Groupe::class, 'id_groupe');
