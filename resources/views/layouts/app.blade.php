@@ -15,21 +15,25 @@
                         <a href="/" class="text-xl font-bold text-indigo-600">GestAbs</a>
                     </div>
                     <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-                        <a href="{{ route('filieres.index') }}" 
+                        <a href="{{ route('filieres.index') }}"
                             class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                             Filières
                         </a>
-                        <a href="{{ route('modules.index') }}" 
+                        <a href="{{ route('modules.index') }}"
                             class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                             Modules
                         </a>
-                        <a href="{{ route('seances.index') }}" 
+                        <a href="{{ route('seances.index') }}"
                             class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                             Séances
                         </a>
-                        <a href="{{ route('absences.index') }}" 
+                        <a href="{{ route('absences.index') }}"
                             class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                             Absences
+                        </a>
+                        <a href="{{ route('niveaux.index') }}"
+                            class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Niveaux
                         </a>
                     </div>
                 </div>
@@ -58,4 +62,4 @@
 
     @vite('resources/js/app.js')
 </body>
-</html> 
+</html>
