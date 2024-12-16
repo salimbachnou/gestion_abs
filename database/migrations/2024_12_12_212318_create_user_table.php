@@ -12,7 +12,7 @@ return new class extends Migration
             $table->id('id_user');
             $table->string('email')->unique();
             $table->string('password');
-            $table->string('role');
+            $table->enum('role', ['admin', 'rss', 'enseignant', 'etudiant']);
             $table->date('date_naissance');
             $table->string('ville');
             $table->foreignId('id_groupe')->nullable()->constrained('groupes', 'id_groupe');

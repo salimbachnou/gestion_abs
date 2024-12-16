@@ -15,7 +15,10 @@ class AdminSeeder extends Seeder
             'prenom' => 'System',
             'email' => 'admin@admin.com',
             'password' => Hash::make('password'),
-            'role' => 'admin'
+            'role' => 'admin',
+            'date_naissance' => '1990-01-01',// Example date
+            'ville' => 'Fes',
+            'id_groupe' => null,
         ]);
     }
 }
