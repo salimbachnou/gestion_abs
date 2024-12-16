@@ -23,8 +23,9 @@ class User extends Authenticatable
     // The "type" of the auto-incrementing ID
     protected $keyType = 'int';
 
-    // Mass assignable attributes
     protected $fillable = [
+        'nom',
+        'prenom',
         'email',
         'password',
         'role',
